@@ -3,7 +3,7 @@
 ================= */
 function randMultiple() {
    num = Math.floor(Math.random() * 900);
-   if (num % 100 == 0 && num !== 0) {
+   if (num % 100 == 0 && num !== 0 && num > 200) {
       return num;
    } else {
       return randMultiple();

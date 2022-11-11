@@ -13,8 +13,10 @@
    <body>
       <div id="app">
          <h1>{{message}}</h1>
-         <img :src="imgSrc" alt="" />
          <button id="change-src" @click="changeSrc()">cambia src img</button>
+         <div class="text-center">
+            <img :src="imgSrc" alt="" />
+         </div>
          <hr />
          <div class="flex-box">
             <ul class="members">

@@ -75,7 +75,7 @@ h5 {
    overflow: hidden;
    padding-left: 16px;
    padding-right: 16px;
-   position: relative;
+   position: fixed;
    text-align: left;
    text-decoration: none;
    transition: box-shadow 0.15s, transform 0.15s;

@@ -6,7 +6,7 @@ function randMultiple() {
    if (num % 100 == 0 && num !== 0) {
       return num;
    } else {
-      return rand();
+      return randMultiple();
    }
 }
 
@@ -57,7 +57,7 @@ createApp({
             },
          ],
          changeSrc: function () {
-            console.log('ciao', rand());
+            this.imgSrc = `https://picsum.photos/${randMultiple()}/${randMultiple()}`;
          },
       };
    },

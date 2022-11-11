@@ -14,7 +14,7 @@
       <div id="app">
          <h1>{{message}}</h1>
          <img :src="imgSrc" alt="" />
-         <button id="change-src">cambia src img</button>
+         <button id="change-src" @click="changeSrc()">cambia src img</button>
          <hr />
          <div class="flex-box">
             <ul class="members">

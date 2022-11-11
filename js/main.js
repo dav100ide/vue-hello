@@ -1,3 +1,18 @@
+/* ===============
+   functions
+================= */
+function randMultiple() {
+   num = Math.floor(Math.random() * 900);
+   if (num % 100 == 0 && num !== 0) {
+      return num;
+   } else {
+      return rand();
+   }
+}
+
+/* ===============
+   main
+================= */
 const { createApp } = Vue;
 
 createApp({
@@ -41,6 +56,9 @@ createApp({
                photo: 'scott-estrada-developer.jpg',
             },
          ],
+         changeSrc: function () {
+            console.log('ciao', rand());
+         },
       };
    },
 }).mount('#app');

@@ -14,8 +14,17 @@
       <div id="app">
          <h1>{{message}}</h1>
          <img :src="imgSrc" alt="" />
+         <button id="change-src">cambia src img</button>
          <hr />
-         <ul class="members"></ul>
+         <div class="flex-box">
+            <ul class="members">
+               <li v-for="member in team">
+                  <h2 class="text-center">{{member.fristname}} {{member.lastName}}</h2>
+                  <h5 class="text-center">{{ member.role }}</h5>
+                  <img :src="`img/${member.photo}`" alt="" />
+               </li>
+            </ul>
+         </div>
       </div>
       <script src="js/main.js"></script>
    </body>
